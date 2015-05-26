@@ -1,0 +1,27 @@
+package br.com.entertainmentlibrary.model.produto.musica.util;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+import br.com.entertainmentlibrary.model.produto.musica.Musica;
+
+@Entity
+public class InterpreteBanda {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	private String nome;
+	private String foto_perfil;
+	
+	@ManyToMany(mappedBy="interpretesbandas")
+	private List<Faixa> faixas;
+	@ManyToMany(mappedBy="interpretesBandas")
+	private List<Musica> musicas;
+
+}

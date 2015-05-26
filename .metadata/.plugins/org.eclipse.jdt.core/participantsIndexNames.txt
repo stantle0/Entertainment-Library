@@ -1,0 +1,43 @@
+INDEX VERSION 1.127
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1251773734.index
+\contas\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3195285008.index
+\EntLib\src\main\resources
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1273394586.index
+\EntLib\src\main\java
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\40109471.index
+\Copy of EntLib\src\main\java
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3744734445.index
+\contas\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1959516379.index
+\contas (spring-alura)\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3611515419.index
+\contas (spring-alura)\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3720023915.index
+\HibernateSpringTest\src\main\resources
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3033030740.index
+\contas\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1089883512.index
+\HibernateTest\src\main\resources
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3715707219.index
+\EntlibHibernateTest\src\main\resources
+C:\Users\e.gabriel.medeiros\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\40109471.index
+\Copy of EntLib\src\main\java
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\512616878.index
+\contas\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3213023674.index
+\contas (spring-alura)\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\508210505.index
+\contas (spring-alura)\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2315097179.index
+\MyWebProject\src\main\java
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\365383744.index
+\contas (spring-alura)\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3972999275.index
+\Entertainment Library\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\538835124.index
+\contas\src
+C:\Users\Gabriel\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\205342844.index
+\Copy of EntLib\src\main\java
+C:\Users\e.gabriel.medeiros\Workspaces\Entertainment Library\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\205342844.index
+\Copy of EntLib\src\main\java

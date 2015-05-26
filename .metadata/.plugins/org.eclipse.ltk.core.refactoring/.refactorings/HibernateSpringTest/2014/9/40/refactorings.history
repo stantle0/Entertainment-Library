@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HibernateSpringTest/src/main/resources/META-INF/persistence_modelo.xml&apos; to &apos;persistence.xml&apos;" description="Rename resource &apos;persistence_modelo.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/META-INF/persistence_modelo.xml" name="persistence.xml" stamp="1411926072746" updateReferences="true"/>
+</session>
