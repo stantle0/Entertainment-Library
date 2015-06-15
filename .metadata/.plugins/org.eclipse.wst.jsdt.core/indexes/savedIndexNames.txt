@@ -1,6 +1,3 @@
 INDEX VERSION 1.3+C:\Users\e.gabriel.medeiros\Workspaces\Entertainment-Library 15-06 inicio do dia\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1575694337.index
 2467550566.index
-1477742182.index
-3978147068.index
-2380111498.index
+2328927675.index

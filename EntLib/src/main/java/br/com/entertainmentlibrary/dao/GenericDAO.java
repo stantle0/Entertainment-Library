@@ -1,10 +1,12 @@
 package br.com.entertainmentlibrary.dao;
 
+import java.util.List;
+
 public interface GenericDAO<T> {
 
 	public void save(T object);
 	public T getElementById(int id);
+	public List<T> listAll();
 	public void delete(T Object);
-	public void update (T Object);
 	
 }
