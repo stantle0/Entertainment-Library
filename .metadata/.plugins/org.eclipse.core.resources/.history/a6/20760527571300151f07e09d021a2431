@@ -1,0 +1,7 @@
+package br.com.entertainmentlibrary.dao;
+
+public interface GenericDAO<T> {
+
+	public int salva(T objeto)
+	
+}

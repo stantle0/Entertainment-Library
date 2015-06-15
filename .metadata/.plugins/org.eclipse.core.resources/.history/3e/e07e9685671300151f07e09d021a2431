@@ -1,0 +1,25 @@
+package br.com.entertainmentlibrary.dao;
+
+public class GenericHibernateDAO<T> implements GenericDAO<T> {
+
+	public int save(T object) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public T getElementById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void delete(T Object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void update(T Object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
