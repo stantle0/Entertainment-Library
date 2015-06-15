@@ -10,8 +10,8 @@ Seguem os projetos da Workspace:
   
 Tasks:
 
-  - Criar um CRUD genérico para todas as entidades;
-  - Testar o CRUD com cada entidade utilizando JUnit;
+  - Criar um DAO genérico para todas as entidades;
+  - Testar o DAO com cada entidade utilizando JUnit;
   
   - Criar uma view simples para a página do produto;
   - Criar o control para a manipulação do produto (atributos serão opcionais a princípio);

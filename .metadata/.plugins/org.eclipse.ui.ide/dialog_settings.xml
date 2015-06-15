@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Gabriel\Workspaces\JPA 2 Introdução à persistência de dados com JPA e Hibernate"/>
 			<item value="C:\Users\Gabriel\Workspaces\Entertainment Library"/>
 			<item value="C:\Users\e.gabriel.medeiros\Workspaces\Entertainment Library"/>
 		</list>
