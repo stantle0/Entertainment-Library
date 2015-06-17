@@ -1,0 +1,9 @@
+package br.com.entertainmentlibrary.test;
+
+public class DAOTeste {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

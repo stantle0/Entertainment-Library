@@ -1,0 +1,24 @@
+package br.com.entertainmentlibrary.test;
+
+import br.com.entertainmentlibrary.model.produto.Produto;
+import br.com.entertainmentlibrary.model.util.Cidade;
+
+public class DAOTeste {
+	
+	public static void main(String[] args) {
+		Cidade cidade1 = new Cidade();
+		cidade1.setId(1);
+		cidade1.setNome("Maracaju");
+		
+		Cidade cidade2 = new Cidade();
+		cidade2.setId(2);
+		cidade2.setNome("Campo Grande");
+		
+		Cidade cidade3 = new Cidade();
+		cidade3.setId(1);
+		cidade1.setNome("Maracaju");
+		
+		
+	}
+
+}

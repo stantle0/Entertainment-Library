@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 
 public class GenericHibernateDAO<T> implements GenericDAO<T> {
 
@@ -29,11 +30,8 @@ public class GenericHibernateDAO<T> implements GenericDAO<T> {
 	}
 
 	public List<T> listAll() {
-		Query query = entityManager.createQuery("select o from " + entityClass.toString());
+		TypedQuery<T> query = entityManager.createQuery("Select o from " + entityClass.toString() + " o", entityClass);
 		return query.getResultList();
 	}
-	
-	falta listar todos
-
 	
 }

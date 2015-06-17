@@ -1,0 +1,13 @@
+package br.com.entertainmentlibrary.test;
+
+import br.com.entertainmentlibrary.model.produto.Produto;
+import br.com.entertainmentlibrary.model.util.Cidade;
+
+public class DAOTeste {
+	
+	public static void main(String[] args) {
+		Cidade cidade1 = new Cidade();
+		
+	}
+
+}

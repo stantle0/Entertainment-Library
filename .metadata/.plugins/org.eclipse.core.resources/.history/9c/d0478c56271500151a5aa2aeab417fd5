@@ -1,0 +1,12 @@
+package br.com.entertainmentlibrary.test;
+
+import br.com.entertainmentlibrary.model.produto.Produto;
+
+public class DAOTeste {
+	
+	public static void main(String[] args) {
+		Produto produto1 = new Produto();
+		
+	}
+
+}
