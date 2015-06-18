@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="javax.persistence.DiscriminatorValue"/>
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.musica.util.TipoMidia"/>
-<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.musica.util.Midia"/>
 <fullyQualifiedTypeName name="org.hibernate.type.UrlType"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
@@ -36,7 +35,6 @@
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.util.Tag"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.util.TipoEmpresa"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -51,7 +49,12 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="T"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.Produto"/>
+<fullyQualifiedTypeName name="br.com.entertainmentlibrary.util.JPAUtil"/>
+<fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.util.Estado"/>
+<fullyQualifiedTypeName name="br.com.entertainmentlibrary.dao.GenericHibernateDAO"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.util.Cidade"/>
+<fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 </qualifiedTypeNameHistroy>

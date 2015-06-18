@@ -30,8 +30,11 @@ public class GenericHibernateDAO<T> implements GenericDAO<T> {
 	}
 
 	public List<T> listAll() {
-		TypedQuery<T> query = entityManager.createQuery("Select o from " + entityClass.toString() + " o", entityClass);
-		return query.getResultList();
+		System.out.println("String da query");
+		System.out.println("Select o from " + entityClass.getSimpleName() + " o");
+		TypedQuery<T> query = entityManager.createQuery("Select o from " + entityClass.getSimpleName() + " o", entityClass);
+		List<T> result = query.getResultList();
+		return result;
 	}
 	
 }
