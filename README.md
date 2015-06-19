@@ -10,8 +10,10 @@ Seguem os projetos da Workspace:
   
 Tasks:
 
-  - Criar um DAO genérico para todas as entidades;
-  - Testar o DAO com cada entidade utilizando JUnit;
+  - Criar o id, getters e setters da Classe Entity;
+  - Alterar as entidades para extenderem dessa classe, facilitando manutencao;
+  - Refatorar a criacao do DAO;
+  - Testar o DAO utilizando JUnit - realizar testes restantes;
   
   - Criar uma view simples para a página do produto;
   - Criar o control para a manipulação do produto (atributos serão opcionais a princípio);

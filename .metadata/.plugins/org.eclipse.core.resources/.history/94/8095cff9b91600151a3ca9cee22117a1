@@ -12,9 +12,8 @@ import br.com.entertainmentlibrary.util.JPAUtil;
 
 public class DAOTeste<T> {
 
-	s
-	//TODO refatorar criacao de DAO
-	//TODO criar testes com JUnit
+	//TODO
+//	criar testes com JUnit
 //	- salvar
 //	- salvar e deletar
 //	- salvar e busca

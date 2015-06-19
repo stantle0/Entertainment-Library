@@ -1,0 +1,6 @@
+package br.com.entertainmentlibrary.model;
+
+public class Entidade {
+	- criar o id, getters e setters
+	- criar 
+}
