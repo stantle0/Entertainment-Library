@@ -1,2 +1,6 @@
 1434370001735	Delete element
 1434633374432	Infer generic type arguments
+1434716378423	Extract method 'listaTodosEstadosECidades'
+1434724354966	Convert local variable 'entityManager' to field
+1434726020779	Extract method 'extracted'
+1434741713702	Delete element

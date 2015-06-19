@@ -3,7 +3,6 @@ package br.com.entertainmentlibrary.dao;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 public class GenericHibernateDAO<T> implements GenericDAO<T> {

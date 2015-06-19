@@ -27,9 +27,6 @@ public class Estado {
 		return this.getNome();
 	}
 	
-	public Estado(String nome) {
-		this.nome = nome;
-	}
 	public int getId() {
 		return id;
 	}
