@@ -1,8 +1,8 @@
 package br.com.entertainmentlibrary.test;
 
-import javax.persistence.EntityManager;
-
 import static junit.framework.Assert.assertEquals;
+
+import javax.persistence.EntityManager;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,13 +16,13 @@ import br.com.entertainmentlibrary.util.JPAUtil;
 
 public class GenericHibernateDAOTeste {
 
-	TODO refatorar criacao de DAO
-	TODO criar testes com JUnit
-	- salvar
-	- salvar com relacionamento
-	- deletar
-	- busca
-	- update
+//	TODO refatorar criacao de DAO
+//	TODO criar testes com JUnit
+//	- salvar
+//	- salvar com relacionamento
+//	- deletar
+//	- busca
+//	- update
 	
 	private EntityManager entityManager;
 	private GenericHibernateDAO<Cidade> cidadeDao;
@@ -38,7 +38,7 @@ public class GenericHibernateDAOTeste {
 		estado.setNome("Mato Grosso Do Sul");
 	}
 	
-	
+
 	@Test
 	public void testaSave() {
 		
@@ -85,19 +85,18 @@ public class GenericHibernateDAOTeste {
 	}
 
 
-	corrigir erro testaRemove
 	@Test
-	public void testaRemove() {
-		
+	public void testaRemove() throws InterruptedException {
 		gravaCidade();
 		
 		abrirManager();
 		GenericHibernateDAO<Cidade> cidadeDAO = DAOFactory.getCidadeDAO(entityManager);
-		cidadeDAO.delete(cidade);
+		Cidade cidadeParaRemover = cidadeDAO.getElementById(cidade.getId());
+		cidadeDAO.delete(cidadeParaRemover);
 		fecharManager();
 
-		
 		abrirManager();
+		cidadeDAO = DAOFactory.getCidadeDAO(entityManager);
 		Cidade cidadeBuscada = cidadeDAO.getElementById(cidade.getId());
 		assertEquals(null, cidadeBuscada);
 		fecharManager();
@@ -106,7 +105,26 @@ public class GenericHibernateDAOTeste {
 	
 	@Test
 	public void testUpdate() {
+		gravaCidade();
 		
+		
+		abrirManager();
+		
+		Cidade cidadeBuscada = DAOFactory.getCidadeDAO(entityManager).getElementById(cidade.getId());
+		assertEquals(cidade.getId(), cidadeBuscada.getId());
+		assertEquals(cidade.getNome(), cidadeBuscada.getNome());
+		
+		cidadeBuscada.setNome("Três Lagoas");
+		
+		fecharManager();
+		
+		
+		abrirManager();
+		
+		Cidade cidadeAlterada = DAOFactory.getCidadeDAO(entityManager).getElementById(cidade.getId());
+		assertEquals("Três Lagoas", cidadeAlterada.getNome());
+		
+		fecharManager();
 	}
 	
 	private void abrirManager() {

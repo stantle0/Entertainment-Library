@@ -10,9 +10,6 @@ Seguem os projetos da Workspace:
   
 Tasks:
 
-  - Testar o GenericHibernateDAO utilizando JUnit - realizar testes restantes;
-  - Refatorar testes;
-  
   - Criar uma view simples para a página do produto;
   - Criar o control para a manipulação do produto (atributos serão opcionais a princípio);
   - Atualizar a view simples para a página do produto;
