@@ -11,3 +11,5 @@
 1434780398049	Convert local variable 'estadoDao' to field
 1434781516479	Convert local variable 'cidade' to field
 1434781524858	Convert local variable 'estado' to field
+1434782964160	Extract method 'extracted'
+1434783058496	Extract method 'extracted'

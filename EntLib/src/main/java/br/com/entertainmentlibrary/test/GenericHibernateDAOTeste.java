@@ -42,12 +42,7 @@ public class GenericHibernateDAOTeste {
 	@Test
 	public void testaSave() {
 		
-		/* Salvando */
-		abrirManager();
-		
-		DAOFactory.getCidadeDAO(entityManager).save(cidade);
-
-		fecharManager();
+		gravaCidade();
 
 		/* Teste */
 		abrirManager();
@@ -61,19 +56,16 @@ public class GenericHibernateDAOTeste {
 		fecharManager();
 		
 	}
+
+
 	
 	@Test
 	public void testaSaveComRelacionamento() {
 		
 		cidade.setEstado(estado);
 		
-		abrirManager();	
-		
-		DAOFactory.getCidadeDAO(entityManager).save(cidade);
-		DAOFactory.getEstadoDAO(entityManager).save(estado);
-
-		fecharManager();
-		
+		gravaEstado();
+		gravaCidade();
 		
 		abrirManager();
 		
@@ -91,9 +83,24 @@ public class GenericHibernateDAOTeste {
 		fecharManager();
 		
 	}
-	
+
+
+	corrigir erro testaRemove
 	@Test
 	public void testaRemove() {
+		
+		gravaCidade();
+		
+		abrirManager();
+		GenericHibernateDAO<Cidade> cidadeDAO = DAOFactory.getCidadeDAO(entityManager);
+		cidadeDAO.delete(cidade);
+		fecharManager();
+
+		
+		abrirManager();
+		Cidade cidadeBuscada = cidadeDAO.getElementById(cidade.getId());
+		assertEquals(null, cidadeBuscada);
+		fecharManager();
 		
 	}
 	
@@ -112,4 +119,19 @@ public class GenericHibernateDAOTeste {
 		entityManager.close();
 	}
 
+	private void gravaCidade() {
+		abrirManager();
+		
+		DAOFactory.getCidadeDAO(entityManager).save(cidade);
+		
+		fecharManager();
+	}
+	
+	private void gravaEstado() {
+		abrirManager();	
+		
+		DAOFactory.getEstadoDAO(entityManager).save(estado);
+		
+		fecharManager();
+	}
 }
