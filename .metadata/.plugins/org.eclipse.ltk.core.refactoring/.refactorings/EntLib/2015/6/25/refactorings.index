@@ -5,3 +5,9 @@
 1434726020779	Extract method 'extracted'
 1434741713702	Delete element
 1434776094524	Delete element
+1434777720145	Extract method 'extracted'
+1434777959534	Rename type 'DAOTeste'
+1434780384528	Convert local variable 'cidadeDao' to field
+1434780398049	Convert local variable 'estadoDao' to field
+1434781516479	Convert local variable 'cidade' to field
+1434781524858	Convert local variable 'estado' to field

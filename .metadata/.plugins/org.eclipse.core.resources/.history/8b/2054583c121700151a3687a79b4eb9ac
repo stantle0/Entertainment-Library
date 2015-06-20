@@ -1,0 +1,13 @@
+package br.com.entertainmentlibrary.dao;
+
+import javax.persistence.EntityManager;
+
+import br.com.entertainmentlibrary.model.util.Cidade;
+
+public class DAOFactory {
+
+	public static GenericHibernateDAO<Cidade> getCidadeDAO(EntityManager manager) {
+		return new GenericHibernateDAO<Cidade>(manager, Cidade.class);
+	}
+	
+}

@@ -52,5 +52,4 @@ public class Estado {
 		this.cidades = cidades;
 	}
 
-	
 }

@@ -25,6 +25,7 @@ public class Cidade {
 	List<Usuario> usuarios;
 	
 	
+	
 	public int getId() {
 		return id;
 	}
@@ -49,6 +50,5 @@ public class Cidade {
 	public void setUsuarios(List<Usuario> usuarios) {
 		this.usuarios = usuarios;
 	}
-	
 	
 }

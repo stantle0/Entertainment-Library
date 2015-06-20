@@ -4,13 +4,14 @@ import javax.persistence.EntityManager;
 
 import org.junit.Test;
 
+import br.com.entertainmentlibrary.dao.DAOFactory;
 import br.com.entertainmentlibrary.dao.GenericHibernateDAO;
 import br.com.entertainmentlibrary.model.util.Cidade;
 import br.com.entertainmentlibrary.model.util.Estado;
 import br.com.entertainmentlibrary.util.JPAUtil;
 
 
-public class DAOTeste<T> {
+public class GenericHibernateDAOTeste {
 
 	//TODO refatorar criacao de DAO
 	//TODO criar testes com JUnit
@@ -20,6 +21,8 @@ public class DAOTeste<T> {
 //	- salvar e update
 	
 	private EntityManager entityManager;
+	private GenericHibernateDAO<Cidade> cidadeDao;
+	private GenericHibernateDAO<Estado> estadoDao;
 	
 	private void abrirManager() {
 		entityManager = JPAUtil.getEntityManager();
@@ -35,19 +38,31 @@ public class DAOTeste<T> {
 		estado.setNome("Mato Grosso Do Sul");
 		
 		abrirManager();
-		GenericHibernateDAO<Estado> estadoDao = new GenericHibernateDAO<Estado>(entityManager, Estado.class);
-		GenericHibernateDAO<Cidade> cidadeDao = new GenericHibernateDAO<Cidade>(entityManager, Cidade.class);
+		
+		estadoDao = DAOFactory.getEstadoDAO(entityManager);
+		cidadeDao = DAOFactory.getCidadeDAO(entityManager);
 
 		cidadeDao.save(cidade);
 		estadoDao.save(estado);
+
+		fecharManager();
+
 		
+		abrirManager();
+		
+		cidadeDao = DAOFactory.getCidadeDAO(entityManager);
+		Cidade cidadeBuscada = cidadeDao.getElementById(cidade.getId());
+		
+		
+		fecharManager();
+//		listaTodosEstadosECidades();
+		
+		
+	}
+
+	private void fecharManager() {
 		entityManager.getTransaction().commit();
 		entityManager.close();
-		
-		
-		listaTodosEstadosECidades();
-		
-		
 	}
 
 	private static void listaTodosEstadosECidades() {

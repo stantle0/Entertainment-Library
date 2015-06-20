@@ -1,0 +1,126 @@
+package br.com.entertainmentlibrary.test;
+
+import javax.persistence.EntityManager;
+
+import static junit.framework.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import br.com.entertainmentlibrary.dao.DAOFactory;
+import br.com.entertainmentlibrary.dao.GenericHibernateDAO;
+import br.com.entertainmentlibrary.model.util.Cidade;
+import br.com.entertainmentlibrary.model.util.Estado;
+import br.com.entertainmentlibrary.util.JPAUtil;
+
+
+public class GenericHibernateDAOTeste {
+
+	//TODO refatorar criacao de DAO
+	//TODO criar testes com JUnit
+//	- salvar
+//	- salvar com relacionamento
+//	- deletar
+//	- busca
+//	- update
+	
+	private EntityManager entityManager;
+	private GenericHibernateDAO<Cidade> cidadeDao;
+	private GenericHibernateDAO<Estado> estadoDao;
+	private Cidade cidade;
+	private Estado estado;
+	
+	@Before
+	public void before() {
+		cidade = new Cidade();
+		cidade.setNome("Campo Grande");
+		estado = new Estado();
+		estado.setNome("Mato Grosso Do Sul");
+	}
+	
+	
+	@Test
+	public void testaSave() {
+		
+		/* Salvando */
+		abrirManager();
+		
+		DAOFactory.getCidadeDAO(entityManager).save(cidade);
+
+		fecharManager();
+
+		/* Teste */
+		abrirManager();
+		
+		cidadeDao = DAOFactory.getCidadeDAO(entityManager);
+		Cidade cidadeBuscada = cidadeDao.getElementById(cidade.getId());
+		
+		assertEquals(cidade.getId(), cidadeBuscada.getId());
+		assertEquals(cidade.getNome(), cidadeBuscada.getNome());
+		
+		fecharManager();
+		
+	}
+	
+	@Test
+	public void testaSaveComRelacionamento() {
+		
+		cidade.setEstado(estado);
+		
+		abrirManager();	
+		
+		DAOFactory.getCidadeDAO(entityManager).save(cidade);
+		DAOFactory.getEstadoDAO(entityManager).save(estado);
+
+		fecharManager();
+		
+		
+		abrirManager();
+		
+		Cidade cidadeBuscada = DAOFactory.getCidadeDAO(entityManager).getElementById(cidade.getId());
+		Estado estadoBuscado = DAOFactory.getEstadoDAO(entityManager).getElementById(estado.getId());
+		
+		assertEquals(cidade.getId(), cidadeBuscada.getId());
+		assertEquals(cidade.getNome(), cidadeBuscada.getNome());
+		assertEquals(estadoBuscado.getId(), estado.getId());
+		assertEquals(estadoBuscado.getNome(), estado.getNome());
+		
+		fecharManager();
+		
+	}
+	
+	@Test
+	public void testaRemove() {
+		
+	}
+	
+	@Test
+	public void testUpdate() {
+		
+	}
+	
+	private void abrirManager() {
+		entityManager = JPAUtil.getEntityManager();
+		entityManager.getTransaction().begin();
+	}
+
+	private void fecharManager() {
+		entityManager.getTransaction().commit();
+		entityManager.close();
+	}
+
+	private static void listaTodosEstadosECidades() {
+		EntityManager entityManager = JPAUtil.getEntityManager();
+		GenericHibernateDAO<Estado> estadoDao = new GenericHibernateDAO<Estado>(entityManager, Estado.class);
+		GenericHibernateDAO<Cidade> cidadeDao = new GenericHibernateDAO<Cidade>(entityManager, Cidade.class);
+		entityManager.getTransaction().begin();
+		
+		System.out.println(estadoDao.listAll());
+		System.out.println(cidadeDao.listAll());
+		
+		entityManager.getTransaction().commit();
+		entityManager.close();
+	}
+	
+
+}
