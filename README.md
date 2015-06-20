@@ -10,10 +10,8 @@ Seguem os projetos da Workspace:
   
 Tasks:
 
-  - Criar o id, getters e setters da Classe Entity;
-  - Alterar as entidades para extenderem dessa classe, facilitando manutencao;
-  - Refatorar a criacao do DAO;
-  - Testar o DAO utilizando JUnit - realizar testes restantes;
+  - Testar o GenericHibernateDAO utilizando JUnit - realizar testes restantes;
+  - Refatorar testes;
   
   - Criar uma view simples para a página do produto;
   - Criar o control para a manipulação do produto (atributos serão opcionais a princípio);

@@ -1,0 +1,23 @@
+package br.com.entertainmentlibrary.model;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Entidade {
+//	- criar o id, getters e setters
+//	- alterar as entidades para extenderem dessa classe, facilitando manutencao
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+}
