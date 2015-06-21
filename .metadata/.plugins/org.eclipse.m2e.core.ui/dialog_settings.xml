@@ -40,6 +40,18 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="adsdassad"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
 		<list key="catalogUrl">
 			<item value="http://repo1.maven.org/maven2/archetype-catalog.xml"/>
@@ -47,6 +59,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Gabriel\Workspaces\Entertainment-Library\jsf-livraria-primefaces"/>
+			<item value="C:\Users\Gabriel\Workspaces\Entertainment-Library\EntLib\src\test\java"/>
 			<item value="C:\Users\Gabriel\Workspaces\Entertainment Library\EntLib"/>
 			<item value="C:\Users\Gabriel\Workspaces\Entertainment Library\EntLib\src\main\resources\META-INF\persistence.xml"/>
 			<item value="C:\Users\Gabriel\Workspaces\Entertainment Library\Entertainment Library"/>
@@ -61,20 +75,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.hibernatetest"/>
-			<item value="br.com.entlib"/>
-			<item value="br.com.entlib.TesteHibernate"/>
+			<item value="br.com.EntLib2"/>
+			<item value="teste.teste"/>
 		</list>
 		<list key="groupId">
-			<item value="com.hibernatetest"/>
-			<item value="br.com.entlib"/>
+			<item value="br.com"/>
+			<item value="teste"/>
 		</list>
 		<list key="artifactId">
-			<item value="HibernateTest"/>
-			<item value="EntlibHibernateTest"/>
-			<item value="HibernateSpringTest"/>
-			<item value="TesteHibernate"/>
-			<item value="EntLib"/>
+			<item value="EntLib2"/>
+			<item value="teste"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
