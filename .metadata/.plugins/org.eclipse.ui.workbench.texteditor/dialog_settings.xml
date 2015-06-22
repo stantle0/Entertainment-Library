@@ -8,14 +8,14 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="facet"/>
+			<item value="javax.faces"/>
+			<item value="javax.fac"/>
+			<item value="face"/>
+			<item value="fac"/>
 			<item value="jsf"/>
-			<item value="prime"/>
-			<item value="primef"/>
-			<item value="id da"/>
-			<item value="jstl"/>
 			<item value="spring"/>
-			<item value="warn"/>
+			<item value="spriing"/>
+			<item value="build"/>
 		</list>
 		<list key="replacehistory">
 		</list>

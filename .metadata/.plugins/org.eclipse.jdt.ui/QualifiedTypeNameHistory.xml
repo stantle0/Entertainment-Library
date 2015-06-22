@@ -36,7 +36,6 @@
 <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
 <fullyQualifiedTypeName name="javax.persistence.EnumType"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
-<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
 <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
 <fullyQualifiedTypeName name="T"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.dao.DAOFactory"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
 </qualifiedTypeNameHistroy>
