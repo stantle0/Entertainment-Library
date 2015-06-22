@@ -3,6 +3,7 @@
 	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
 	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
+	<item value="C:\Users\e.gabriel.medeiros\Workspaces\Entertainment-Library 22-06 inicio do dia\libraries\JSF 2.2 (Mojarra 2.2.0)\mojarra-2.2.0-FCS\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
 	<item value="480,510" key="UserLibraryLoadSaveDialog.size"/>
@@ -93,7 +94,7 @@
 		<item value="4" key="index"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="1" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\Gabriel\Workspaces\Entertainment-Library\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Gabriel\Workspaces\Entertainment-Library\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jsf-livraria-primefaces" path="/jsf-livraria-primefaces" reloadable="true" source="org.eclipse.jst.jee.server:jsf-livraria-primefaces"/><Context docBase="C:\Users\Gabriel\Workspaces\Entertainment-Library\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EntLib" path="/EntLib" reloadable="true" source="org.eclipse.jst.j2ee.server:EntLib"/></Host>
+      <Context docBase="C:\Users\e.gabriel.medeiros\Workspaces\Entertainment-Library 22-06 inicio do dia\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\e.gabriel.medeiros\Workspaces\Entertainment-Library 22-06 inicio do dia\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EntLib" path="/EntLib" reloadable="true" source="org.eclipse.jst.jee.server:EntLib"/></Host>
     </Engine>
   </Service>
 </Server>
