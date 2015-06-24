@@ -27,7 +27,6 @@
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.util.EmpresaVinculada"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.util.Tag"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.util.TipoEmpresa"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
@@ -39,9 +38,7 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
 <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
 <fullyQualifiedTypeName name="T"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.produto.Produto"/>
-<fullyQualifiedTypeName name="br.com.entertainmentlibrary.util.JPAUtil"/>
 <fullyQualifiedTypeName name="br.com.entertainmentlibrary.model.util.Estado"/>
 <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
@@ -58,6 +55,9 @@
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
-<fullyQualifiedTypeName name="br.com.entertainmentlibrary.dao.DAOFactory"/>
 <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="br.com.entertainmentlibrary.dao.DAOFactory"/>
+<fullyQualifiedTypeName name="br.com.entertainmentlibrary.util.JPAUtil"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

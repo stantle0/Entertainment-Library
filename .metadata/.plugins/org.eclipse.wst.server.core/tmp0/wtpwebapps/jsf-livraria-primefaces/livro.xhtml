@@ -9,7 +9,7 @@
 <ui:composition template="_template.xhtml">
 
 	<ui:define name="titulo">Novo Livro</ui:define>
-
+	
 	<ui:define name="conteudo">
 		<p:messages id="messages" autoUpdate="true"/>
 		<p:growl id="growl" autoUpdate="true"/>
@@ -49,6 +49,7 @@
 				<h:outputLabel value="Selecione" for="autor" />
 				<p:commandLink value="ou cadastre novo autor"
 					action="#{livroBean.formAutor}" immediate="true" />
+					
 				<br/>
 				<p:selectOneMenu value="#{livroBean.idAutor}" id="autor">
 					<f:selectItems value="#{livroBean.autores}" var="autor"

@@ -2,6 +2,7 @@ package br.com.entertainmentlibrary.dao;
 
 import javax.persistence.EntityManager;
 
+import br.com.entertainmentlibrary.model.produto.Produto;
 import br.com.entertainmentlibrary.model.util.Cidade;
 import br.com.entertainmentlibrary.model.util.Estado;
 
@@ -13,6 +14,10 @@ public class DAOFactory {
 	
 	public static GenericHibernateDAO<Estado> getEstadoDAO(EntityManager manager) {
 		return new GenericHibernateDAO<Estado>(manager, Estado.class);
+	}
+	
+	public static GenericHibernateDAO<Produto> getProdutoDAO(EntityManager manager) {
+		return new GenericHibernateDAO<Produto>(manager, Produto.class);
 	}
 	
 }

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="_template.xhtml">
+
+	<ui:define name="titulo">Novo Livro</ui:define>
+	
+	<ui:define name="conteudo">
+		<p:messages id="messages" autoUpdate="true"/>
+		<p:growl id="growl" autoUpdate="true"/>
+		
+		<h:form>
+			<p:fieldset legend="Dados do Livro">
+				<h:panelGrid columns="2">
+					<h:outputLabel value="Titulo: " for="titulo" />
+					<p:inputText id="titulo" value="#{livroBean.livro.titulo}"
+						required="true" requiredMessage="o título do livro é obrigatório"
+						validatorMessage="o título não pode possuir mais que 40 caracteres">
+						<f:validateLength maximum="40" />
+						<f:ajax event="blur"/>
+					</p:inputText>
+					<h:outputLabel value="ISBN: " for="isbn" />
+					<p:inputMask id="isbn" value="#{livroBean.livro.isbn}"
+						mask="999-9-99-999999-9"
+						validator="#{livroBean.comecaComDigitoUm}" required="true"
+						requiredMessage="o número ISBN é obrigatório">
+						<f:ajax event="blur"/>
+					</p:inputMask>
+					<h:outputLabel value="Preço: " for="preco" />
+					<p:inputText id="preco" value="#{livroBean.livro.preco}">
+						<f:convertNumber type="currency" pattern="R$ 0.00"
+							currencySymbol="R$" locale="pt_BR" />
+					</p:inputText>
+					<h:outputLabel value="Data de Lançamento: " for="dataLancamento" />
+					<p:calendar id="dataLancamento"
+						value="#{livroBean.livro.data.time}"
+						pattern="dd/MM/yyyy" timeZone="America/Sao_Paulo"/>
+				</h:panelGrid>
+			</p:fieldset>
+			
+			<br/>
+
+			<p:fieldset legend="Dados do Autor">
+				<h:outputLabel value="Selecione" for="autor" />
+				<p:commandLink value="ou cadastre novo autor"
+					action="#{livroBean.formAutor}" immediate="true" />
+				<br/>
+				<p:selectOneMenu value="#{livroBean.idAutor}" id="autor">
+					<f:selectItems value="#{livroBean.autores}" var="autor"
+						itemLabel="#{autor.nome}" itemValue="#{autor.id}" />
+				</p:selectOneMenu>
+				<br/>
+				<p:commandButton value="Gravar autor"
+					action="#{livroBean.gravarAutor}"
+					process="@this autor" update="tabelaAutores"/>
+				<br />
+				<br />
+
+				<p:dataTable value="#{livroBean.autoresDoLivro}" var="autor"
+					id="tabelaAutores">
+					<p:column>
+						<h:outputText value="#{autor.nome}" />
+					</p:column>
+				</p:dataTable>
+			</p:fieldset>
+			
+			<br/>
+			
+			<p:fieldset>
+				<p:commandButton value="Gravar" action="#{livroBean.gravar}"
+					process="@form" update="@form :livrosCadastrados :messages :growl">
+				</p:commandButton>
+
+			</p:fieldset>
+		</h:form>
+		
+		<br/>
+		
+<!-- 		<h:panelGroup layout="block" id="livrosCadastrados"> -->
+			<p:fieldset id="livrosCadastrados" legend="Livros Cadastrados" rendered="#{livroBean.qtdeLivros > 0}">
+				<p:dataTable value="#{livroBean.todosLivros}" var="livro"
+					paginator="true" rows="3">
+					<p:column>
+						<h:outputText value="#{livro.titulo}" />
+					</p:column>
+					<p:column>
+						<h:outputText value="#{livro.isbn}" />
+					</p:column>
+					<p:column>
+						<h:outputText value="#{livro.preco}" />
+					</p:column>
+				</p:dataTable>
+			</p:fieldset>
+<!-- 		</h:panelGroup> -->
+	</ui:define>
+</ui:composition>
+</html>
